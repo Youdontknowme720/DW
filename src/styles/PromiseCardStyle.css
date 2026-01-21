@@ -1,0 +1,20 @@
+.p-card {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: #242424 0 5px;
+    text-align: left;
+    padding: 1rem;
+
+    flex: 1 1 21rem; /* Flexbox: wachsen, schrumpfen, Startbreite */
+    max-width: 23rem;
+    min-width: 18rem;
+    height: 16rem;
+
+    margin-top: 1rem; /* Abstand nach oben */
+    margin-bottom: 1rem; /* Abstand nach unten */
+}
+
+.p-card-icon{
+    font-size: 48px;
+}
