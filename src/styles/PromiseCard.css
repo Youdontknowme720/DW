@@ -1,0 +1,28 @@
+.p-card {
+    background-color: white;
+    grid-template-rows: auto;
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+}
+
+.p-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    font-weight: bold;
+}
+
+.card-heading {
+    margin-top: 0.5rem;
+}
+
+
+.card-text {
+    color: gray;
+}

@@ -1,7 +1,8 @@
 import '../styles/Hero.css'
+import * as React from "react";
 
 type HeroProps = {
-    title: string;
+    title: React.ReactNode;
     description: string;
     image: string;
 }
@@ -9,7 +10,7 @@ type HeroProps = {
 function Hero({title, description, image}: HeroProps) {
     return (
         <div className="hero-container">
-            <h2 className="hero-title" style={{gridArea: "box-title"}}>{title}</h2>
+            <h1 className="hero-title" style={{gridArea: "box-title"}}>{title}</h1>
             <p className="hero-desc" style={{gridArea: "box-desc"}}>{description}</p>
             <img src={image} style={{gridArea: "box-img"}} alt="Hallo" className="hero-image"/>
         </div>

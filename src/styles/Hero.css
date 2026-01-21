@@ -3,9 +3,32 @@
     grid-template-areas:
         "box-title box-img"
         "box-desc box-img";
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    grid-template-rows: min-content min-content;
+    align-items: start;
 }
 
 .hero-image{
     width: 100%;
-    height: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-areas:
+            "box-title"
+            "box-img"
+            "box-desc";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: none;
+        margin-top: 1rem; /* optional Abstand nach oben */
+    }
 }

@@ -6,6 +6,13 @@
     margin: 0 auto;
 }
 
-.promise-sec{
+.hero-sec {
+    padding: 1rem 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.promise-sec {
     background-color: red;
 }

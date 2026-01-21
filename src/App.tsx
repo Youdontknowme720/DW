@@ -1,7 +1,7 @@
 import './App.css'
 import rlogo from "./assets/Brum.png";
-//import PromiseCard from "./components/PromiseCard.tsx";
 import Hero from './components/Hero'
+import Promises from './components/Promis.tsx'
 
 function App() {
 
@@ -11,16 +11,21 @@ function App() {
                 <h1 className="header-logo">Logo!</h1>
             </section>
             <section className="hero-sec">
-                <Hero title="Wilkommen bei der Dieter Wenzelmann GmbH"
-                      description="Das hier ist ein nettes Familienunternehmen"
+                <Hero title={
+                    <>
+                        Willkommen bei der <br/>
+                        <span style={{color: "blue"}}>Dieter Wenzelmann GmbH</span> <br/>
+                        in 57648 Unnau/Westerwald
+                    </>
+                }
+                      description="asdfkasdfsd
+faksdjflajsdlfjlasdjfks
+asdkfjlasjdfkasjdflkasjldfj
+ajskdfjklasjdfkajsfdljsldfjlasasjdfkasdhfkhsakdfkjsf
+ahskdfahsdfjhkasdhfksfaskdfhsdhfkhaksdfkhasdhfsak"
                       image={rlogo}/>
             </section>
-            <section className="promise-sec">
-                <div>
-                    <p>Hello</p>
-                </div>
-            </section>
-
+            <Promises></Promises>
         </div>
     );
 }

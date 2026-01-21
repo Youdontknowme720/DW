@@ -1,16 +1,17 @@
-import '../styles/PromiseCardStyle.css'
-
-type CardProps = {
-    title: string,
-    description: string,
+import '../styles/PromiseCard.css'
+import * as React from "react";
+type PromiseCard = {
+    icon: React.ReactNode;
+    heading: string;
+    text: string;
 }
 
-function PromiseCard({ title, description}: CardProps) {
+function PromiseCard({icon, heading, text }: PromiseCard) {
     return (
         <div className="p-card">
-            <div className="p-card-icon">$</div>
-            <h3 className="p-card-title">{title}</h3>
-            <p className="p-card-description">{description}</p>
+            <div className="card-icon">{icon}</div>
+            <h2 className="card-heading" style={{gridArea: "box-heading"}}>{heading}</h2>
+            <p className="card-text" style={{gridArea: "box-text"}}>{text}</p>
         </div>
     )
 }
