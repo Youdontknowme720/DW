@@ -1,18 +1,19 @@
 .service-container {
     display: grid;
-    grid-template-rows: 300px 500px;
+    grid-template-rows: 200px 600px;
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
 }
 
 .service-title {
     text-align: center;
     font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 .service-cards {
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
 }
 
