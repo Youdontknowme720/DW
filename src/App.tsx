@@ -2,6 +2,7 @@ import './App.css'
 import rlogo from "./assets/Brum.png";
 import Hero from './components/Hero'
 import Promises from './components/Promis.tsx'
+import Services from "./components/Services.tsx";
 
 function App() {
 
@@ -26,6 +27,7 @@ ahskdfahsdfjhkasdhfksfaskdfhsdhfkhaksdfkhasdhfsak"
                       image={rlogo}/>
             </section>
             <Promises></Promises>
+            <Services />
         </div>
     );
 }

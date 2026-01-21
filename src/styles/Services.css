@@ -1,0 +1,29 @@
+.service-container {
+    display: grid;
+    grid-template-rows: 300px 500px;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.service-title {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.service-cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr); /* Tablet: 2 pro Zeile */
+    }
+}
+
+@media (max-width: 600px) {
+    .service-cards {
+        grid-template-columns: 1fr; /* Mobile: 1 pro Zeile */
+    }
+}
