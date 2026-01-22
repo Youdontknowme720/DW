@@ -1,5 +1,13 @@
 .service-card {
     display: grid;
     background-color: white;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
+    padding: min(1rem, 20%);
+}
+
+.card-img{
+    width: 100%;
+    max-height:100px;
 }
