@@ -7,22 +7,22 @@ import "../styles/Promise.css"
 const promisesData = [
     {
         title: "Indviduallösungen",
-        description: "Spezialanfertigungen und maßgeschneiderte Produkte",
+        description: "Spezialanfertigungen und maßgeschneiderte ProdukteSpezialanfertigungen und maßgeschneiderte ProdukteSpezialanfertigungen und maßgeschneiderte ProdukteSpezialanfertigungen und maßgeschneiderte ProdukteSpezialanfertigungen und maßgeschneiderte ProdukteSpezialanfertigungen und maßgeschneiderte ProdukteSpezialanfertigungen und maßgeschneiderte Produkte",
         icon: <AccessAlarmIcon style={{fontWeight: 'bold', fontSize:'60px'}}/>,
     },
     {
         title: "Qualität",
-        description: "Präzise Fertigungen und strenge Qualitätskontrollen",
+        description: "Präzise Fertigungen und strenge QualitätskontrollenPräzise Fertigungen und strenge QualitätskontrollenPräzise Fertigungen und strenge QualitätskontrollenPräzise Fertigungen und strenge Qualitätskontrollen",
         icon: <Check style={{fontWeight: 'bold', fontSize:'60px'}}/>,
     },
     {title: "Termintreue Lieferungen",
-        description: "Wir garantieren eine schnellen und sicheren Transport ihrer Ware",
+        description: "Wir garantieren eine schnellen und sicheren Transport ihrer WareWir garantieren eine schnellen und sicheren Transport ihrer WareWir garantieren eine schnellen und sicheren Transport ihrer WareWir garantieren eine schnellen und sicheren Transport ihrer WareWir garantieren eine schnellen und sicheren Transport ihrer Ware",
         icon: <LocalTaxiIcon style={{fontWeight: 'bold', fontSize:'60px'}}/>
     },
 ]
 export default function Promises() {
     return (
-        <section className="promises-container">
+        <div className="promises-container">
             {promisesData.map((item, index) => (
                 <PromiseCard
                     key={index}
@@ -31,6 +31,6 @@ export default function Promises() {
                     icon={item.icon}
                 />
             ))}
-        </section>
+        </div>
     );
 }

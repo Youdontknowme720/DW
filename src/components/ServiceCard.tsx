@@ -10,7 +10,7 @@ export default function ServiceCard({img, description}: ServiceCardType) {
         <div className="service-card">
             <img src={img} alt="Service" className="card-img" />
             <p>{description}</p>
-            <p style={{color: "blue", fontWeight: "bold"}}>Mehr erfahren</p>
+            <p style={{color: "blue", fontWeight: "bold", marginTop: "1rem"}}>Mehr erfahren</p>
         </div>
     )
 }

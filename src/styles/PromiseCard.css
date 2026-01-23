@@ -1,28 +1,12 @@
-.p-card {
+.p-card{
     background-color: white;
-    grid-template-rows: auto;
-    height: 300px;
-    max-width: 400px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.1s ease;
-    padding: 0 0.5rem;
+    max-width: 500px;
+    padding-inline: clamp(1rem, 2%, 4rem);
+    padding: 1.5rem;
 }
 
-.p-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.card-icon {
-    font-weight: bold;
-}
-
-.card-heading {
-    margin-top: 0.5rem;
-}
-
-
-.card-text {
-    color: gray;
+.card-heading{
+    padding-bottom: 0.5rem;
 }

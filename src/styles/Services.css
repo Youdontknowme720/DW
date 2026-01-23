@@ -1,21 +1,17 @@
 .service-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
 .service-title {
-    text-align: center;
-    font-size: 8dvh;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
-.service-cards {
+.service-grid {
     display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(400px, 400px)
-    );
-    gap: 2rem;
-    justify-content: center;
+
 }
