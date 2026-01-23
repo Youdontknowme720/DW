@@ -1,6 +1,4 @@
 .service-container {
-    display: grid;
-    justify-content: center;
     text-align: center;
 }
 
@@ -11,7 +9,9 @@
     font-weight: 400;
 }
 
-.service-grid {
+.service-grid{
     display: grid;
-
+    gap: clamp(0.5rem, 1rem, 2rem);
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

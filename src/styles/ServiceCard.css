@@ -2,7 +2,7 @@
     background-color: white;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 500px;
     padding-inline: clamp(1rem, 2%, 4rem);
     padding: 1.5rem;
 }
