@@ -6,7 +6,6 @@
     grid-template-columns: 1fr 1fr;
     padding-inline: clamp(1rem, 5%, 4rem);
     gap: var(--space-md);
-    padding-block: var(--space-lg);
 }
 
 .hero-txt{
