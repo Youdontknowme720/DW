@@ -5,15 +5,18 @@
         "box-desc box-img";
     grid-template-columns: 1fr 1fr;
     padding-inline: clamp(1rem, 5%, 4rem);
+    padding-bottom: 1rem;
     gap: var(--space-md);
 }
 
 .hero-txt{
     max-width: var(--content-max-width);
-    background-color: gray;
+    text-align: justify;
     border-radius: 10px;
-    padding-inline: var(--space-xs);
     padding-bottom: var(--space-xs);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    padding-inline: clamp(0.3rem, 0.5rem, 1rem);
 }
 
 .hero-title {

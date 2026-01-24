@@ -1,5 +1,6 @@
 .service-container {
     text-align: center;
+    padding-inline: clamp(1em, 1em, 2em);
 }
 
 .service-title {

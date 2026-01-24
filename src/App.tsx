@@ -23,7 +23,9 @@ function App() {
 Wir fräsen für Sie Aluminium, und vieles mehr. Mit unseren modernen, großflächigen CNC-Graviermaschinen und CNC-Fräsmaschinen stellen wir für Sie 2 ½D Frästeile aus Aluminium, Kunststoffen und Messing in 1A-Qualität her. Dank unseres großen Maschinenparks produzieren wir kostengünstig und gewährleisten kurze Lieferzeiten. So können wir und auch Sie „just in time“ liefern.
 Lassen Sie sich von unserer Internetpräsenz anregen oder nehmen Sie gleich persönlich mit uns Kontakt auf. Wir beraten Sie kompetent und erstellen Ihnen gerne ein individuelles Angebot.
 Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung" image={rlogo}/>
-            <Promises/>
+            <div className="promises-wrapper">
+                <Promises/>
+            </div>
             <Services/>
             <Personal/>
         </div>

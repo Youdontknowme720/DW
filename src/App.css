@@ -1,0 +1,4 @@
+.promises-wrapper {
+    padding-top: 1rem;
+    padding-inline: clamp(0.5rem, 1rem, 2rem);
+}
