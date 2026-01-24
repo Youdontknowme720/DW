@@ -26,7 +26,9 @@ Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung" imag
             <div className="promises-wrapper">
                 <Promises/>
             </div>
-            <Services/>
+            <div className="service-wrapper">
+                <Services />
+            </div>
             <Personal/>
         </div>
     );
