@@ -28,6 +28,7 @@
 .hero-desc {
     grid-area: box-desc;
     font-size: var(--font-size-lg);
+    hyphens: auto;
 }
 
 .hero-image {
@@ -46,6 +47,14 @@
             "box-desc";
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .hero-txt {
+        text-align: left;
+    }
+
+    .hero-desc{
+        letter-spacing: normal;
     }
 
     .hero-image {

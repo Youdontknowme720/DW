@@ -1,9 +1,10 @@
 .service-container {
     text-align: center;
-    padding-inline: clamp(1em, 1em, 2em);
+    padding-inline: clamp(0.5em, 1em, 2em);
     background-color: rgb(34, 42, 60);
     border: 2px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
+    padding-bottom: clamp(0.5em, 1.5em, 2em);
 }
 
 .service-title {

@@ -7,3 +7,7 @@
     padding-inline: clamp(0.5rem, 1rem, 2rem);
     padding-top: clamp(1rem, 2rem, 4rem);
 }
+
+.comp-name{
+    color: #4747ff;
+}

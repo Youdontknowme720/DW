@@ -11,7 +11,11 @@ function App() {
     return (
         <div className="App">
             <div className="page-container">
-                <h1 style={{textAlign: "center", fontSize: "4vw"}}>Willkommen bei der Firma Dieter Wenzelmann GmbH</h1>
+                <h1 style={{textAlign: "center", fontSize: "4vw"}}>Willkommen bei der Firma <br/>
+                    <span className="comp-name">
+                        Dieter Wenzelmann GmbH
+                    </span>
+                </h1>
             </div>
             <Hero title={
                 <>
@@ -27,9 +31,11 @@ Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung" imag
                 <Promises/>
             </div>
             <div className="service-wrapper">
-                <Services />
+                <Services/>
             </div>
-            <Personal/>
+            <div className="service-wrapper">
+                <Personal/>
+            </div>
         </div>
     );
 }
