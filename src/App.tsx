@@ -5,17 +5,15 @@ import Hero from './components/Hero'
 import Promises from './components/Promis.tsx'
 import Services from "./components/Services.tsx";
 import Personal from "./components/Personal.tsx";
+import Footer from "./components/Footer.tsx";
+import Logo from "./assets/logo.png"
 
 function App() {
 
     return (
         <div className="App">
-            <div className="page-container">
-                <h1 style={{textAlign: "center", fontSize: "4vw"}}>Willkommen bei der Firma <br/>
-                    <span className="comp-name">
-                        Dieter Wenzelmann GmbH
-                    </span>
-                </h1>
+            <div className="logo-wrapper">
+                <img src={Logo} alt="Dieter Wenzelmann GmbH Logo"/>
             </div>
             <Hero title={
                 <>
@@ -35,6 +33,9 @@ Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung" imag
             </div>
             <div className="service-wrapper">
                 <Personal/>
+            </div>
+            <div className="service-wrapper">
+                <Footer/>
             </div>
         </div>
     );

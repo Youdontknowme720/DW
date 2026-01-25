@@ -1,0 +1,32 @@
+.footer-container {
+    display: grid;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    grid-template-columns: auto auto;
+    padding-inline: clamp(0.5em, 1em, 2em);
+    background-color: rgb(34, 42, 60);
+    background-image: url("../assets/signs.png");
+    background-size: cover;
+    background-position: center;
+    color: blue;
+}
+
+.footer-text h2{
+    font-size: clamp(2rem, 3rem, 8rem);
+}
+
+.footer-text p{
+    font-size: clamp(1rem, 2rem, 4rem);
+}
+
+.footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: clamp(0.5em, 1em, 2em);
+}
+
+.footer-img img{
+    width: 400px;
+    border-radius: 12px;
+}
