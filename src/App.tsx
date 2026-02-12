@@ -32,7 +32,13 @@ Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung" imag
                 <Services/>
             </div>
             <div className="service-wrapper">
-                <Personal/>
+                <Personal
+                cards={[
+                    { title: "Anna", desc: "Frontend Entwicklerin", image: rlogo },
+                    { title: "Tom", desc: "Backend Entwickler", image: rlogo },
+                    { title: "Lisa", desc: "UX Designerin", image: rlogo}
+                ]}
+                />
             </div>
             <div className="service-wrapper">
                 <Footer/>

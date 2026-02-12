@@ -15,6 +15,10 @@
     height: auto;
 }
 
+.pcard-container {
+  min-width: 100%;
+}
+
 /* Mobile / kleine Screens */
 @media (max-width: 768px) {
     .pcard-container {
