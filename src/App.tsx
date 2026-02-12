@@ -34,7 +34,11 @@ Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung" imag
             <div className="service-wrapper">
                 <Personal
                 cards={[
-                    { title: "Anna", desc: "Frontend Entwicklerin", image: rlogo },
+                    { title: "Anna",
+                      desc: `
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
+                      `,
+                      image: rlogo },
                     { title: "Tom", desc: "Backend Entwickler", image: rlogo },
                     { title: "Lisa", desc: "UX Designerin", image: rlogo}
                 ]}
