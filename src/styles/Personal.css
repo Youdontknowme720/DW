@@ -1,29 +1,9 @@
 .personal-container {
+    display: grid;
     background-color: rgb(34, 42, 60);
     border: 2px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
     padding: clamp(0.5em, 1.5em, 2em);
     padding-inline: clamp(0.5em, 1em, 2em);
-    display: grid;
-    grid-template-columns: 75% auto;
-}
-
-.personal-txt {
-    max-width: 80%;
-}
-
-.personal-txt h1{
-    font-weight: 500;
-}
-
-.personal-img {
-     width: 100%;
-     height: 100%;
-     display: flex;
- }
-.personal-img img {
-    width: 250px;
-    max-width: 400px;
-    height: auto;
-    object-fit: contain;
+    grid-template-columns: 1fr;
 }

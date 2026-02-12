@@ -1,0 +1,26 @@
+.pcard-container{
+    display: grid;
+    grid-template-areas: 
+        "box-content box-img";
+    grid-template-columns: 1fr 1fr;
+    padding-inline: clamp(1rem, 5%, 4rem);
+    padding-bottom: 1rem;
+    gap: var(--space-md);
+    width: 100%;
+    max-width: 100%;
+}
+
+.pcard-container img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile / kleine Screens */
+@media (max-width: 768px) {
+    .pcard-container {
+        grid-template-areas:
+            "box-content"
+            "box-img";
+        grid-template-columns: 1fr;
+    }
+}

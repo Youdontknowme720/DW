@@ -12,7 +12,7 @@
     position: relative;           /* wichtig für Overlay */
     border-radius: 10px;
     font-weight: 700;
-    color: black;
+    color: white;
     padding: var(--space-xs);
     border: 2px solid rgba(255,255,255,0.06);
     max-width: var(--content-max-width);
@@ -47,9 +47,8 @@
 @media (max-width: 768px) {
     .hero-container {
         grid-template-areas:
-            "box-title"
-            "box-img"
-            "box-desc";
+            "box-content"
+            "box-img";
         grid-template-columns: 1fr;
         text-align: center;
     }
