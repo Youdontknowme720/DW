@@ -20,23 +20,25 @@
 }
 
 .pcard-txt {
-  max-height: 260px;
-  overflow-y: auto;
-  padding-right: 0.5rem;
+  max-height: none;
+  overflow: visible;
 }
 
-.pcard-txt::-webkit-scrollbar {
-  width: 6px;
-}
-
-.pcard-txt::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.2);
-  border-radius: 6px;
-}
 
 @media (max-width: 768px) {
   .pcard-txt {
-    max-height: 180px;
+    max-height: 180px;      /* kannst du feinjustieren */
+    overflow-y: auto;
+    padding-right: 0.5rem; /* Platz für Scrollbar */
+  }
+
+  /* Optional: schöner Scrollbar-Look */
+  .pcard-txt::-webkit-scrollbar {
+    width: 6px;
+  }
+  .pcard-txt::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.25);
+    border-radius: 6px;
   }
 }
 

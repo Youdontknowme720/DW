@@ -31,3 +31,21 @@
     padding-bottom: 0.5rem;
     text-align: left;
 }
+.more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}
+
+/* Deaktivierter Text, wenn kein Link */
+.more-link.disabled {
+  color: gray;
+  cursor: default;
+  text-decoration: none;
+}

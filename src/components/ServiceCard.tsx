@@ -1,16 +1,25 @@
 import '../styles/ServiceCard.css';
+import { Link } from "react-router-dom";
 
 type ServiceCardType = {
-    img: string;
-    description: string;
-}
+  img: string;
+  description: string;
+  link?: string; // optional
+};
 
-export default function ServiceCard({img, description}: ServiceCardType) {
-    return (
-        <div className="service-card">
-            <img src={img} alt="Service" className="card-img" />
-            <p>{description}</p>
-            <p style={{color: "blue", fontWeight: "bold", marginTop: "1rem"}}>Mehr erfahren</p>
-        </div>
-    )
+export default function ServiceCard({ img, description, link }: ServiceCardType) {
+  return (
+    <div className="service-card">
+      <img src={img} alt="Service" className="card-img" />
+      <p>{description}</p>
+
+      {link ? (
+        <Link to={link} className="more-link">
+          Mehr erfahren
+        </Link>
+      ) : (
+        <span className="more-link disabled">Mehr erfahren</span>
+      )}
+    </div>
+  );
 }

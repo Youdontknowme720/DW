@@ -9,13 +9,11 @@
   overflow: hidden;
 }
 
-/* Fenster */
 .carousel-window {
   width: 100%;
   overflow: hidden;
 }
 
-/* Track */
 .carousel-track {
   display: flex;
   transition: transform 1.5s ease;

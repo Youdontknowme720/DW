@@ -2,6 +2,7 @@ import ServiceCard from "./ServiceCard.tsx";
 import '../styles/Services.css';
 import signBlue from '../assets/sign.png';
 import round from '../assets/round.png';
+import Para from '../assets/Pragraph.png';
 
 const serviceCards = [
     {
@@ -25,6 +26,19 @@ const serviceCards = [
         img: round,
         description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder für fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien."
     },
+    {
+        img: round,
+        description: "Datenschutz"
+    },
+    {
+        img: round,
+        description: ""
+    },
+    {
+        img: Para,
+        description: "",
+        link: "/impressum"
+    },
 ];
 
 export default function Services() {
@@ -37,6 +51,7 @@ export default function Services() {
                         key={index}
                         img={item.img}
                         description={item.description}
+                        link={item.link}
                     />
                 ))}
             </div>
