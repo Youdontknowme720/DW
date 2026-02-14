@@ -1,0 +1,22 @@
+.impressum-container {
+  color: black;
+  background: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;    /* zentriert die Seite horizontal */
+}
+
+.impressum-logo-wrapper {
+  text-align: left;   
+  margin-bottom: 2rem;
+}
+
+.impressum-logo-wrapper img {
+  max-width: 200px;  /* passt sich an, bleibt quadratisch/rechteckig */
+  height: auto;
+}
+
+.container-impressum{
+  font-size: 40px;
+  margin-left: 2rem;
+}
