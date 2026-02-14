@@ -19,7 +19,27 @@
   min-width: 100%;
 }
 
-/* Mobile / kleine Screens */
+.pcard-txt {
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.pcard-txt::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pcard-txt::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .pcard-txt {
+    max-height: 180px;
+  }
+}
+
 @media (max-width: 768px) {
     .pcard-container {
         grid-template-areas:
