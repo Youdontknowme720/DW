@@ -6,6 +6,9 @@
     padding-inline: clamp(1rem, 5%, 4rem);
     padding-bottom: 1rem;
     gap: var(--space-md);
+    padding: clamp(0.5rem, 1rem, 4rem);
+    background-color: rgb(34, 42, 60);
+    border-radius: 12px;
 }
 
 .hero-txt {

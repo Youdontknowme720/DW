@@ -4,14 +4,18 @@ import Services from './components/Services';
 import Personal from './components/Personal';
 import Footer from './components/Footer';
 import rlogo from "./assets/Brum.png";
-import Logo from "./assets/logo.png";
+import LogoTwo from "./assets/logo_two.png";
 
 export default function Home() {
   return (
     <>
-        <div className="logo-wrapper">
-            <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
+        <div className="logo-wrapper" style={{background: "white", 
+          borderRadius: "12px", 
+          marginBottom: "0.5rem", 
+          marginTop: "0.5rem"}}>
+            <img src={LogoTwo} alt="Dieter Wenzelmann GmbH Logo" />
         </div>
+        <div className='service-wrapper'>
       <Hero
         title={<>Willkommen bei der <br/><span style={{color: "blue"}}>Dieter Wenzelmann GmbH</span><br/>in 57648 Unnau/Westerwald</>}
         description="Wir präsentieren Ihnen auf den nachfolgenden Seiten unser breites Spektrum an Schildern und Aluminium-Frästeilen. Von einfachen Industrieschildern aus Kunststoff, Aluminium oder Schildern aus Edelstahl in gravierter oder geätzter Ausführung, über den Digitaldruck und Eloxaldruck bis hin zur Laserbeschriftung bieten wir alles genau nach Kundenwunsch an. Dies gilt natürlich auch für Frontplatten und Bedienpanels, die wir nach Ihrer Zeichnung oder Datei individuell anfertigen.
@@ -20,6 +24,7 @@ Lassen Sie sich von unserer Internetpräsenz anregen oder nehmen Sie gleich pers
 Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung"
         image={rlogo}
       />
+        </div>
 
       <div className="promises-wrapper"><Promises /></div>
       <div className="service-wrapper"><Services /></div>

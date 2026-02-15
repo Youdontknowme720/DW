@@ -11,13 +11,23 @@
 .comp-name{
     color: #4747ff;
 }
+
 .logo-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: clamp(1rem, 2rem, 4rem);
-    border-radius: 12px;
-    overflow: hidden; /* WICHTIG */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: 12px;
+  overflow: hidden;
 }
+
+@media (max-width: 480px) {
+  .logo-wrapper {
+    width: 90%;          /* ❗ Container wird schmaler als Viewport */
+    max-width: 320px;   /* ❗ harte Grenze für Mobile */
+    padding: 0.75rem;
+  }
+}
+
 
 .logo-wrapper img {
     width: 100%;

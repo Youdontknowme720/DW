@@ -3,10 +3,11 @@ import '../styles/Services.css';
 import signBlue from '../assets/sign.png';
 import round from '../assets/round.png';
 import Para from '../assets/Pragraph.png';
+import signTwo from "../assets/sign_two.png";
 
 const serviceCards = [
     {
-        img: signBlue,
+        img: signTwo,
         description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder für fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien."
     },
     {img: round, description: "Im 2 ½ D-Bereich fräsen wir Teile aus Aluminium, Kunststoff und Messing."},
