@@ -4,7 +4,7 @@ import Services from './components/Services';
 import Personal from './components/Personal';
 import Footer from './components/Footer';
 import rlogo from "./assets/Brum.png";
-import LogoTwo from "./assets/logo_two.png";
+import Logo from "./assets/w_logo.svg";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
           borderRadius: "12px", 
           marginBottom: "0.5rem", 
           marginTop: "0.5rem"}}>
-            <img src={LogoTwo} alt="Dieter Wenzelmann GmbH Logo" />
+            <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
         </div>
         <div className='service-wrapper'>
       <Hero
