@@ -1,10 +1,10 @@
-import Hero from './components/Hero';
-import Promises from './components/Promis';
-import Services from './components/Services';
-import Personal from './components/Personal';
-import Footer from './components/Footer';
-import rlogo from "./assets/Brum.png";
-import Logo from "./assets/w_logo.svg";
+import Hero from '../components/Hero';
+import Promises from '../components/Promis';
+import Services from '../components/Services';
+import Personal from '../components/Personal';
+import Footer from '../components/Footer';
+import rlogo from "../assets/Brum.png";
+import Logo from "../assets/w_logo.svg";
 
 export default function Home() {
   return (
