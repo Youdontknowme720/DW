@@ -18,6 +18,7 @@
   padding: clamp(1rem, 3vw, 2rem);
   border-radius: 12px;
   overflow: hidden;
+  background-color: white;
 }
 
 @media (max-width: 480px) {
