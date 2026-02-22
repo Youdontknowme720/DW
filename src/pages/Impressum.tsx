@@ -1,8 +1,11 @@
 import Logo from "../assets/w_logo.svg";
 import PageLayout from "../components/PageLayout";
+import { useNavigate } from "react-router-dom";
+
 import '../styles/Impressum.css';
 
-export default function Impressum() {
+export default function Impressum() {  
+  const navigate = useNavigate();
   return (
     <PageLayout>
 
@@ -10,6 +13,14 @@ export default function Impressum() {
         <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
       </div>
 
+      <button 
+        className="back-button"
+        onClick={() => navigate(-1)}
+        aria-label="Zurück zur vorherigen Seite"
+      >
+        ← Zurück
+
+      </button>
       <div className="service-wrapper">
         <div className="container-impressum">
 

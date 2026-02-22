@@ -3,7 +3,7 @@ import '../styles/Services.css';
 import signBlue from '../assets/sign.png';
 import round from '../assets/round.png';
 import signTwo from "../assets/sign_two.png";
-import Para from "../assets/Paragraph.svg";
+import Para from "../assets/Impressum_neu.svg";
 
 const serviceCards = [
     {
