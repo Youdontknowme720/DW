@@ -8,7 +8,8 @@ import Para from "../assets/Impressum_neu.svg";
 const serviceCards = [
     {
         img: signTwo,
-        description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder für fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien."
+        description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder fuer fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien.",
+        link: "/schilder"
     },
     {img: round, description: "Im 2 ½ D-Bereich fräsen wir Teile aus Aluminium, Kunststoff und Messing."},
     {

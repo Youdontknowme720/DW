@@ -3,6 +3,7 @@ import './App.css';
 import ScrollToTop from "./components/ScrollTo";
 import Home from "./pages/Home";
 import Impressum from "./pages/Impressum";
+import Schilder from "./pages/Schilder";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/impressum" element={<Impressum />} />  
+          <Route path="/schilder" element={<Schilder />} />  
           <Route path="*" element={<Home />} />
         </Routes>
       </div>

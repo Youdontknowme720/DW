@@ -1,0 +1,69 @@
+.schilder-hero {
+    background-color: rgb(34, 42, 60);
+    border-radius: 12px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.schilde-hero h1 {
+    color: rgb(236, 239, 242);
+    margin-bottom: 1rem;
+}
+
+.schilder-hero p {
+    color: rgb(236, 239, 242);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schilder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.schilder-card {
+    background-color: rgb(34, 42, 60);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schilder-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.schilder-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.schilder-card-content {
+    padding: 1.5rem;
+    color: rgb(236, 239, 242);
+}
+
+.schilder-card-content h2 {
+    color: #4da3ff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.schilder-card-content p {
+    line-height: 1.6;
+    color: rgb(200, 205, 215);
+}
+
+@media (max-width: 768px) {
+    .schilder-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schilder-card-img {
+        height: 180px;
+    }
+}
