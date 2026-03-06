@@ -13,18 +13,20 @@ export default function Impressum() {
         <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
       </div>
 
-      <button 
-        className="back-button"
-        onClick={() => navigate(-1)}
-        aria-label="Zurück zur vorherigen Seite"
-      >
-        ← Zurück
-
-      </button>
+      <div className="impressum-header">
+        <button 
+          className="back-button"
+          onClick={() => navigate(-1)}
+          aria-label="Zurück zur vorherigen Seite"
+        >
+          ← Zurück
+        </button>
+      </div>
+      
       <div className="service-wrapper">
         <div className="container-impressum">
 
-          <h1 style={{ color: "blue" }}>Impressum</h1>
+          <h1>Impressum</h1>
 
           <p><strong>Dieter Wenzelmann GmbH</strong></p>
           <p>
@@ -56,7 +58,7 @@ export default function Impressum() {
           <p>DE 205 2356 35<br /><br />
           </p>
           <div className="law-wrapper">
-            <h1 style={{ color: "blue" }}>Rechtliche Hinweise</h1>
+            <h1>Rechtliche Hinweise</h1>
             <p><strong>1. Haftungsbeschränkung</strong></p>
             <p>Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. 
               Der Anbieter übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und 

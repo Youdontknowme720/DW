@@ -4,6 +4,7 @@
   border-radius: 12px;
   padding: clamp(1rem, 3vw, 3rem);
   line-height: 1.6;
+  color: rgb(236, 239, 242);
 }
 
 
@@ -11,30 +12,65 @@
   padding-bottom: 0.2rem;
 }
 
+.container-impressum h1 {
+  margin-bottom: 1.5rem;
+}
+
+.law-wrapper {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.law-wrapper h1 {
+  margin-bottom: 1.5rem;
+}
+
 .law-wrapper p:not(:has(strong)){
   padding-bottom: 1rem;
+}
+
+.impressum-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .back-button {
   background: transparent;
   border: 2px solid #4da3ff;
   color: #4da3ff;
-  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.8rem, 2vw, 1.2rem);
-  border-radius: 999px;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 2vw, 1.25rem);
+  border-radius: 8px;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   cursor: pointer;
-  margin: 1rem 0 1.5rem 0;
   transition: all 0.2s ease;
   align-self: flex-start;
-  margin-left: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .back-button:hover {
   background: #4da3ff;
   color: #0e1625;
-  transform: translateX(-2px);
+  transform: translateX(-3px);
 }
 
 .back-button:active {
   transform: translateX(-1px) scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+  }
+
+  .container-impressum {
+    padding: clamp(1rem, 4vw, 1.5rem);
+  }
 }
