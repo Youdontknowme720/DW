@@ -2,13 +2,14 @@
     display: grid;
     border: 2px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     padding-inline: clamp(0.5em, 1em, 2em);
     background-color: rgb(34, 42, 60);
     background-image: url("../assets/signs.png");
     background-size: cover;
     background-position: center;
     color: blue;
+    align-items: center;
 }
 
 .footer-text h2{
@@ -29,4 +30,23 @@
 .footer-img img{
     width: 400px;
     border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-img {
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .footer-img img {
+        width: 100%;
+        max-width: 300px;
+    }
 }

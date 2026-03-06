@@ -26,13 +26,19 @@
 
 
 @media (max-width: 768px) {
-  .pcard-txt {
-    max-height: 180px;      /* kannst du feinjustieren */
-    overflow-y: auto;
-    padding-right: 0.5rem; /* Platz für Scrollbar */
+  .pcard-container {
+    grid-template-areas:
+        "box-content"
+        "box-img";
+    grid-template-columns: 1fr;
   }
 
-  /* Optional: schöner Scrollbar-Look */
+  .pcard-txt {
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+  }
+
   .pcard-txt::-webkit-scrollbar {
     width: 6px;
   }
@@ -40,13 +46,4 @@
     background: rgba(255,255,255,0.25);
     border-radius: 6px;
   }
-}
-
-@media (max-width: 768px) {
-    .pcard-container {
-        grid-template-areas:
-            "box-content"
-            "box-img";
-        grid-template-columns: 1fr;
-    }
 }

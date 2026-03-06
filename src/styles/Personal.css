@@ -53,6 +53,10 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .personal-container {
+    flex-direction: column;
+  }
+
   .carousel-btn {
     font-size: 1.5rem;
     padding: 0.4rem 0.8rem;
