@@ -5,7 +5,7 @@ import Personal from '../components/Personal';
 import Footer from '../components/Footer';
 import PageLayout from '../components/PageLayout';
 import rlogo from "../assets/Brum.png";
-import Logo from "../assets/w_logo.svg";
+import Logo from "../assets/logo.png";
 
 export default function Home() {
   return (

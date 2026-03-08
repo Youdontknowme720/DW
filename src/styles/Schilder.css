@@ -4,6 +4,9 @@
     padding: clamp(2rem, 6vw, 5rem);
     text-align: center;
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .schilder-hero h1 {
@@ -24,6 +27,9 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .schilder-card {
@@ -34,6 +40,9 @@
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 320px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .schilder-card:hover {
@@ -46,6 +55,7 @@
     height: auto;
     object-fit: cover;
     min-height: 320px;
+    max-width: 100%;
 }
 
 .schilder-card-content {
@@ -55,6 +65,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .schilder-card-content h2 {

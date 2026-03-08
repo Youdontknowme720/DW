@@ -1,11 +1,17 @@
 .promises-wrapper {
     padding-top: 1rem;
     padding-inline: clamp(0.5rem, 1rem, 2rem);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .service-wrapper {
     padding-inline: clamp(0.5rem, 1rem, 2rem);
     padding-top: clamp(1rem, 2rem, 4rem);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .comp-name{
@@ -19,12 +25,14 @@
   border-radius: 12px;
   overflow: hidden;
   background-color: white;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 480px) {
   .logo-wrapper {
-    width: 90%;          /* ❗ Container wird schmaler als Viewport */
-    max-width: 320px;   /* ❗ harte Grenze für Mobile */
+    width: 100%;
+    max-width: 100%;
     padding: 0.75rem;
   }
 }
