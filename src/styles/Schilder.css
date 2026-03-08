@@ -80,6 +80,15 @@
     color: rgb(200, 205, 215);
 }
 
+.tech-description {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(77, 163, 255, 0.3);
+    font-size: 0.9rem;
+    color: #8ab4f8 !important;
+    line-height: 1.6;
+}
+
 .schilder-card.reverse {
     flex-direction: row-reverse;
 }
