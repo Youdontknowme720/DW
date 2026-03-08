@@ -1,4 +1,3 @@
-import Logo from "../assets/w_logo.svg";
 import PageLayout from "../components/PageLayout";
 import { useNavigate } from "react-router-dom";
 import '../styles/Impressum.css';
@@ -41,10 +40,6 @@ export default function Fraesteile() {
 
   return (
     <PageLayout>
-      <div className="logo-wrapper">
-        <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
-      </div>
-
       <button 
         className="back-button"
         onClick={() => navigate(-1)}

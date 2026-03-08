@@ -5,22 +5,10 @@ import Personal from '../components/Personal';
 import Footer from '../components/Footer';
 import PageLayout from '../components/PageLayout';
 import rlogo from "../assets/Brum.png";
-import Logo from "../assets/w_logo.svg";
 
 export default function Home() {
   return (
     <PageLayout>
-
-      <div
-        className="logo-wrapper"
-        style={{
-          marginBottom: "0.5rem",
-          marginTop: "0.5rem"
-        }}
-      >
-        <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
-      </div>
-
       <div className="service-wrapper">
         <Hero
           title={<>Willkommen bei der <br /><span style={{ color: "blue" }}>Dieter Wenzelmann GmbH</span><br />in 57648 Unnau/Westerwald</>}

@@ -1,4 +1,3 @@
-import Logo from "../assets/w_logo.svg";
 import PageLayout from "../components/PageLayout";
 import { useNavigate } from "react-router-dom";
 
@@ -8,10 +7,6 @@ export default function Impressum() {
   const navigate = useNavigate();
   return (
     <PageLayout>
-
-      <div className="logo-wrapper">
-        <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
-      </div>
 
       <div className="impressum-header">
         <button 
