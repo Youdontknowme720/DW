@@ -5,6 +5,11 @@ import '../styles/Schilder.css';
 import kantteilOne from '../assets/alu_kantteile/kantteil_one.jpeg';
 import kantteilTwo from '../assets/alu_kantteile/kantteil_two.jpeg';
 import kantteilThree from '../assets/alu_kantteile/kantteil_three.jpeg';
+import kantteilFour from '../assets/alu_kantteile/kantteil_4.jpg';
+import kantteilFive from '../assets/alu_kantteile/kantteil_5.jpg';
+import kantteilSix from '../assets/alu_kantteile/kantteil_6.jpg';
+
+const collageImages = [kantteilOne, kantteilTwo, kantteilThree, kantteilFour, kantteilFive, kantteilSix];
 
 export default function Aluprofile() {  
   
@@ -26,6 +31,24 @@ export default function Aluprofile() {
       description: "Bleche aus Aluminium, Stahl oder Edelstahl kanten wir mit einer unserer zahlreichen Kantmatrizen sehr genau ab. Kantteile unterschiedlichster Stärken können wir exakt für Sie fertigen.",
       image: kantteilThree,
       techDescription: "Das Abkanten erfolgt durch Hydraulik-Kantpressen mit bis zu 170 Tonnen Presskraft. Die Biegewinkel werden digital gesteuert und erreichen eine Genauigkeit von ±0,5°. Verschiedene Kantmatrizen ermöglichen Biegeradien von 0,5mm bis 8mm.",
+    },
+    {
+      title: "Präzisionsbearbeitung",
+      description: "Unsere modernen Bearbeitungszentren ermöglichen komplexe Fräs- und Bohrarbeiten mit höchster Präzision.",
+      image: kantteilFour,
+      techDescription: "Mit 5-Achs-Bearbeitung und einer Positioniergenauigkeit von ±0,01mm realisieren wir selbst komplexeste Geometrien. Die automatische Werkzeugvermessung kompensiert Verschleiß und Temperatureinflüsse in Echtzeit.",
+    },
+    {
+      title: "Oberflächenveredelung",
+      description: "Wir bieten verschiedene Oberflächenbehandlungen wie Eloxieren, Pulverbeschichtung und Gleitbeschichtung.",
+      image: kantteilFive,
+      techDescription: "Das Eloxieren erzeugt eine verschleißfeste Oxidschicht von 5-25μm. Pulverbeschichtung bietet Schutzschichten bis 200μm in nahezu allen RAL-Farben. Beide Verfahren erhöhen die Korrosionsbeständigkeit erheblich.",
+    },
+    {
+      title: "Qualitätskontrolle",
+      description: "Jedes Werkstück durchläuft eine strenge Qualitätskontrolle mit modernen Messmitteln.",
+      image: kantteilSix,
+      techDescription: "Wir setzen Koordinatenmessmaschinen (KMM), digitale Messschieber und optische Messsysteme ein. Alle Messergebnisse werden dokumentiert und sind auf Wunsch als Prüfprotokoll lieferbar.",
     },
   ];
 
@@ -54,6 +77,17 @@ export default function Aluprofile() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="collage-section">
+          <h2 className="collage-title">Weitere Bilder</h2>
+          <div className="collage-grid">
+            {collageImages.map((img, index) => (
+              <div key={index} className="collage-item">
+                <img src={img} alt={`Aluprofil ${index + 1}`} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </PageLayout>

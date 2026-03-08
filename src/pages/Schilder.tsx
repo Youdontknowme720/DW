@@ -6,6 +6,25 @@ import industrieOne from '../assets/schilder/industrie_one.jpeg';
 import industrieTwo from '../assets/schilder/industrie_two.jpeg';
 import industrieThree from '../assets/schilder/industrie_three.jpeg';
 import industrieFour from '../assets/schilder/industrie_four.jpeg';
+import industrieFive from '../assets/schilder/industrie_five.jpeg';
+import industrieSix from '../assets/schilder/industrie_6.jpg';
+import designschild from '../assets/schilder/designschild.jpg';
+import designschild2 from '../assets/schilder/designschild_2.jpg';
+import industrie7 from '../assets/schilder/industrie_7.jpg';
+import industrie8 from '../assets/schilder/industrie_8.jpg';
+import industrie9 from '../assets/schilder/industrie_9.jpg';
+import industrie10 from '../assets/schilder/industrie_10.jpg';
+import industrie11 from '../assets/schilder/industrie_11.jpg';
+import industrie12 from '../assets/schilder/industrie_12.jpg';
+import industrie13 from '../assets/schilder/industrie_13.jpg';
+import industrie14 from '../assets/schilder/industrie_14.jpg';
+import industrie15 from '../assets/schilder/industrie_15.jpg';
+
+const collageImages = [
+  designschild, designschild2, industrie7, industrie8,
+  industrie9, industrie10, industrie11, industrie12,
+  industrie13, industrie14, industrie15
+];
 
 export default function Schilder() {  
   
@@ -34,6 +53,18 @@ export default function Schilder() {
       image: industrieFour,
       techDescription: "Die Graviertechnik ermöglicht dauerhafte, abriebfeste Beschriftungen. Bei der Tiefgravur wird das Material bis zu 0,3mm entfernt und mit farbigem Lack ausgelegt. Die Variante 'Vor-Kopf-Gravur' ermöglicht Gravuren auf Stirnflächen für umlaufende Beschriftungen an zylindrischen Teilen.",
     },
+    {
+      title: "Aluminiumschilder",
+      description: "Leicht und robust: Aluminiumschilder eignen sich perfekt für den Innen- und Außenbereich.",
+      image: industrieFive,
+      techDescription: "Aluminiumschilder (1.4301/1.4571) wiegen ca. 2,7 kg/dm³ und sind somit besonders leicht. Die Oberfläche kann eloxiert, lackiert oder mit Schutzfolie versehen werden. Aluminium ist recyclebar und damit umweltfreundlich.",
+    },
+    {
+      title: "Sicherheitskennzeichen",
+      description: "Normgerechte Sicherheits- und Warnschilder nach DIN EN ISO 7010.",
+      image: industrieSix,
+      techDescription: "Alle Sicherheitskennzeichen werden gemäß den gesetzlichen Vorgaben gefertigt. Fluchtwege, Feuerlöscher, Verbots- und Gebotsschilder sind in standardisierten Farben (Rot, Gelb, Grün, Blau) und Symbolen ausgeführt.",
+    },
   ];
 
   return (
@@ -60,6 +91,17 @@ export default function Schilder() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="collage-section">
+          <h2 className="collage-title">Weitere Bilder</h2>
+          <div className="collage-grid">
+            {collageImages.map((img, index) => (
+              <div key={index} className="collage-item">
+                <img src={img} alt={`Schilder ${index + 1}`} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </PageLayout>

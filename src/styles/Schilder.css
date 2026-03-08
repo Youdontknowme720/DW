@@ -118,3 +118,39 @@
         padding: 1.5rem;
     }
 }
+
+.collage-section {
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+.collage-title {
+    text-align: center;
+    color: rgb(236, 239, 242);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.collage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.collage-item {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    transition: transform 0.3s ease;
+}
+
+.collage-item:hover {
+    transform: scale(1.02);
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

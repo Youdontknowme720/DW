@@ -6,6 +6,22 @@ import fraesteilOne from '../assets/fraesteile/fraesteil_one.jpeg';
 import fraesteilTwo from '../assets/fraesteile/fraesteil_two.jpeg';
 import fraesteilThree from '../assets/fraesteile/fraesteil_three.jpeg';
 import fraesteilFour from '../assets/fraesteile/fraesteil_four.jpeg';
+import fraesteilFive from '../assets/fraesteile/fraesteil_5.jpg';
+import fraesteilSix from '../assets/fraesteile/fraesteil_6.jpg';
+import fraesteil7 from '../assets/fraesteile/fraesteil_7.jpg';
+import fraesteil8 from '../assets/fraesteile/fraesteil_8.jpg';
+import fraesteil9 from '../assets/fraesteile/fraesteil_9.jpg';
+import fraesteil10 from '../assets/fraesteile/fraesteil_10.jpg';
+import fraesteil11 from '../assets/fraesteile/fraesteil_11.jpg';
+import fraesteil12 from '../assets/fraesteile/fraesteil_12.jpg';
+import fraesteil13 from '../assets/fraesteile/fraesteil_13.jpg';
+import fraesteil14 from '../assets/fraesteile/fraesteil_14.jpg';
+import fraesteil15 from '../assets/fraesteile/fraesteil_15.jpg';
+
+const collageImages = [
+  fraesteil7, fraesteil8, fraesteil9, fraesteil10,
+  fraesteil11, fraesteil12, fraesteil13, fraesteil14, fraesteil15
+];
 
 export default function Fraesteile() {  
   
@@ -34,6 +50,18 @@ export default function Fraesteile() {
       image: fraesteilFour,
       techDescription: "Das Vertikal-Spannsystem ermöglicht die Bearbeitung von Stirnseiten perpendicular zur Hauptoberfläche. Die Maximale Werkstücklänge beträgt 580mm bei einer Wiederholgenauigkeit von ±0,02mm. Diese Technik ist ideal für Präzisionsteile in der Medizintechnik und im Apparatebau.",
     },
+    {
+      title: "Präzisionsfertigung",
+      description: "Wir fertigen Frästeile mit engsten Toleranzen nach Ihren Vorgaben.",
+      image: fraesteilFive,
+      techDescription: "Unsere Maschinen erreichen eine Wiederholgenauigkeit von ±0,005mm. Die Bearbeitung von Aluminium, Kunststoffen wie POM, PVC, PE und Messing erfolgt mit Schnittgeschwindigkeiten bis zu 30.000 U/min.",
+    },
+    {
+      title: "Klein- und Serienfertigung",
+      description: "Ob Einzelstück oder Serie - wir fertigen wirtschaftlich und schnell.",
+      image: fraesteilSix,
+      techDescription: "Durch optimierte Bearbeitungsstrategien und effizientes Rüsten können wir sowohl Kleinserien als auch größere Stückzahlen kostengünstig fertigen. Werkzeugkosten werden durch strategische Schnittplanung minimiert.",
+    },
   ];
 
   return (
@@ -61,6 +89,17 @@ export default function Fraesteile() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="collage-section">
+          <h2 className="collage-title">Weitere Bilder</h2>
+          <div className="collage-grid">
+            {collageImages.map((img, index) => (
+              <div key={index} className="collage-item">
+                <img src={img} alt={`Frästeil ${index + 7}`} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </PageLayout>
