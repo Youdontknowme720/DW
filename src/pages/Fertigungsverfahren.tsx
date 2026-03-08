@@ -1,5 +1,4 @@
 import PageLayout from "../components/PageLayout";
-import { useNavigate } from "react-router-dom";
 import '../styles/Impressum.css';
 import '../styles/Schilder.css';
 
@@ -8,7 +7,6 @@ import signTwo from '../assets/sign_two.png';
 import round from '../assets/round.png';
 
 export default function Fertigungsverfahren() {  
-  const navigate = useNavigate();
   
   const sections = [
     {
@@ -45,14 +43,6 @@ export default function Fertigungsverfahren() {
 
   return (
     <PageLayout>
-      <button 
-        className="back-button"
-        onClick={() => navigate(-1)}
-        aria-label="Zurueck zur vorherigen Seite"
-      >
-        ← Zurück
-      </button>
-
       <div className="service-wrapper">
         <div className="schilder-hero">
           <h1>Fertigungsverfahren</h1>

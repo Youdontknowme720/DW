@@ -1,23 +1,11 @@
 import PageLayout from "../components/PageLayout";
-import { useNavigate } from "react-router-dom";
 
 import '../styles/Impressum.css';
 
 export default function Impressum() {  
-  const navigate = useNavigate();
   return (
     <PageLayout>
 
-      <div className="impressum-header">
-        <button 
-          className="back-button"
-          onClick={() => navigate(-1)}
-          aria-label="Zurück zur vorherigen Seite"
-        >
-          ← Zurück
-        </button>
-      </div>
-      
       <div className="service-wrapper">
         <div className="container-impressum">
 
