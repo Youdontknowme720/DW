@@ -1,4 +1,3 @@
-import Logo from "../assets/w_logo.svg";
 import PageLayout from "../components/PageLayout";
 import { useNavigate } from "react-router-dom";
 import '../styles/Impressum.css';
@@ -36,10 +35,6 @@ export default function Schilder() {
 
   return (
     <PageLayout>
-      <div className="logo-wrapper">
-        <img src={Logo} alt="Dieter Wenzelmann GmbH Logo" />
-      </div>
-
       <button 
         className="back-button"
         onClick={() => navigate(-1)}
@@ -50,7 +45,7 @@ export default function Schilder() {
 
       <div className="service-wrapper">
         <div className="schilder-hero">
-          <h1>Schilder</h1>
+          <h1>Schilder nach Maß</h1>
           <p>
             Vom Designschild bis hin zum Industrieschild bieten wir Schilder fuer fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien. 
             Jedes unserer Schilder wird zu Ihrem Aushaengeschild. Es spricht den Betrachter an und vermittelt auf Anhieb die gewuenschten Informationen.
@@ -59,7 +54,7 @@ export default function Schilder() {
 
         <div className="schilder-grid">
           {sections.map((section, index) => (
-            <div key={index} className="schilder-card">
+            <div key={index} className={`schilder-card ${index % 2 === 1 ? 'reverse' : ''}`}>
               <img src={section.image} alt={section.title} className="schilder-card-img" />
               <div className="schilder-card-content">
                 <h2>{section.title}</h2>
