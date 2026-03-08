@@ -158,12 +158,16 @@
 .home-logo img {
   max-width: 100%;
   height: auto;
-  max-height: 200px;
-  width: auto;
+  max-height: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 @media (min-width: 768px) {
   .home-logo img {
-    max-height: 300px;
+    max-height: 1000px;
   }
 }

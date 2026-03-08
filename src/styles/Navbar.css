@@ -25,6 +25,10 @@
 .navbar-logo img {
     height: 50px;
     width: auto;
+    background-color: white;
+    padding: 5px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 .navbar-toggle {

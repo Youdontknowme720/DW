@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
-import Logo from '../assets/logo.png';
+import Logo from '../assets/w_logo.svg';
 
 const navLinks = [
   { path: '/', label: 'Startseite' },
