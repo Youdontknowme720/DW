@@ -1,4 +1,5 @@
 import PageLayout from "../components/PageLayout";
+import Lightbox from "../components/Lightbox";
 import '../styles/Impressum.css';
 import '../styles/Schilder.css';
 
@@ -81,13 +82,7 @@ export default function Aluprofile() {
 
         <div className="collage-section">
           <h2 className="collage-title">Weitere Bilder</h2>
-          <div className="collage-grid">
-            {collageImages.map((img, index) => (
-              <div key={index} className="collage-item">
-                <img src={img} alt={`Aluprofil ${index + 1}`} />
-              </div>
-            ))}
-          </div>
+          <Lightbox images={collageImages} alt="Aluprofil" />
         </div>
       </div>
     </PageLayout>
