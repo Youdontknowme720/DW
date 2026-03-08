@@ -11,22 +11,30 @@ const serviceCards = [
         description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder fuer fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien.",
         link: "/schilder"
     },
-    {img: round, description: "Im 2 ½ D-Bereich fräsen wir Teile aus Aluminium, Kunststoff und Messing."},
     {
-        img: round,
-        description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder für fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien."
-    },
-    {
-        img: signBlue,
-        description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder für fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien."
-    },
-    {
-        img: signBlue,
-        description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder für fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien."
+        img: round, 
+        description: "Unsere Industriepanels sorgen dafür, dass Sie Ihre Maschinen optimal bedienen können.",
+        link: "/industriepanels"
     },
     {
         img: round,
-        description: "Vom Designschild bis hin zum Industrieschild bieten wir Schilder für fast alle Einsatzzwecke und aus den unterschiedlichsten Materialien."
+        description: "Im 2 ½ D-Bereich fräsen wir Teile aus Aluminium, Kunststoff und Messing.",
+        link: "/fraesteile"
+    },
+    {
+        img: signBlue,
+        description: "Gerne besorgen wir für Sie die von Ihnen gewünschten Aluminiumprofile und Kantteile.",
+        link: "/aluprofile"
+    },
+    {
+        img: signBlue,
+        description: "Mit unserer Schweiß- und Fügetechnik bieten wir Komplettlösungen für Frontplatten und Gehäuse.",
+        link: "/schweissen"
+    },
+    {
+        img: round,
+        description: "Die verschieden Fertigungsverfahren richten sich nach den Materialien und der benötigen Menge.",
+        link: "/fertigungsverfahren"
     },
     {
         img: round,
