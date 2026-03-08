@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import PageLayout from '../components/PageLayout';
 import rlogo from "../assets/Brum.png";
 import Logo from "../assets/w_logo.svg";
+import gravieren from "../assets/Schild gravieren.mp4";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           oder nehmen Sie gleich persönlich mit uns Kontakt auf.
           Wir beraten Sie kompetent und erstellen Ihnen gerne ein individuelles Angebot.
           Ihre Dieter Wenzelmann GmbH – Industrieschilder – Aluminiumbearbeitung"
-          image={rlogo}
+          video={gravieren}
         />
       </div>
 
