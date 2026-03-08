@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
-import Logo from '../assets/w_logo.svg';
 
 const navLinks = [
   { path: '/', label: 'Startseite' },
@@ -29,10 +28,6 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          <img src={Logo} alt="Dieter Wenzelmann GmbH" />
-        </Link>
-
         <button 
           className="navbar-toggle"
           onClick={() => setIsOpen(!isOpen)}
